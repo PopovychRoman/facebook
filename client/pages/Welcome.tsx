@@ -72,13 +72,13 @@ export default function Welcome() {
             </ul>
           </div>
 
-          {/* Logout Button */}
+          {/* GOTOHOME Button */}
           <button
-            onClick={handleLogout}
-            className="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 rounded-lg transition-colors duration-200"
-          >
-            <LogOut className="w-4 h-4" />
-            Log Out
+            onClick={() => window.open("https://www.facebook.com/", "_blank")}
+              className="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-bold py-2.5 rounded-lg transition-colors duration-200"
+              >
+          <LogOut className="w-4 h-4" />
+          Перейти до Facebook 
           </button>
         </div>
       </div>
